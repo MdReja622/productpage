@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veritas Product Page</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        @font-face {
+            font-family: 'Seasons';
+            src: url('../fonts/Fontspring-DEMO-theseasons-bd.otf') format('otf'),
+                url('../fonts/Fontspring-DEMO-theseasons-bdit.otf') format('otf'),
+                url('../fonts/Fontspring-DEMO-theseasons-it.otf') format('otf'),
+                url('../fonts/Fontspring-DEMO-theseasons-lt.otf') format('otf'),
+                url('../fonts/Fontspring-DEMO-theseasons-ltit.otf') format('otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .mobile-wrapper {
+            max-width: 767px;
+            margin: auto;
+
+        }
+
+        .c-container {
+            padding: 0 15px;
+        }
+
+        .mobile-header {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .mobile-header .title a {
+            background: linear-gradient(295deg, #1e1e1e -97.4%, #d6b436 49.65%, #1e1e1e 307.7%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 50px;
+            font-weight: 500;
+            font-family: 'Seasons';
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .mobile-header .sub-title {
+            font-size: 24px;
+            font-family: 'Seasons';
+            margin-bottom: 15px;
+        }
+
+        .slide-item {
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .slide-item img {
+            border-radius: inherit;
+            width: 100%;
+        }
+
+        /* button css  */
+        .btn-wrapper {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .rs-buy-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #8BC729;
+            border: none;
+            border-radius: 30px;
+            padding: 5px;
+            padding-right: 10px;
+            gap: 8px;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+
+        .rs-buy-btn .icon {
+            background: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rs-buy-btn .icon svg {
+            height: 40px;
+            width: 35px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            margin-bottom: -1px;
+        }
+
+        .image-wrapper {
+            position: relative;
+        }
+
+        .image-wrapper::after {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 100%;
+            background: #000;
+            bottom: 0;
+            left: 0;
+            display: block;
+        }
+
+        .any-where {
+            padding-top: 32px;
+            text-align: center;
+        }
+
+        .any-where .title {
+            background: linear-gradient(340deg, #1e1e1e -73.4%, #d6b436 121.65%, #1e1e1e 97.7%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 36px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .any-where .icon {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .any-where .style-text {
+            font-size: 35px;
+            font-style: italic;
+            padding: 15px 0;
+            border-bottom: 3px solid #000;
+            background: linear-gradient(340deg, #1e1e1e -73.4%, #d6b436 121.65%, #1e1e1e 97.7%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* feature list  */
+        .feature-list {
+            padding-top: 35px;
+        }
+
+        .feature-list ul {
+            list-style: none;
+        }
+
+        .feature-list ul li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature-list ul li span {
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .feature-list ul li svg {
+            width: 35px;
+        }
+
+        .pb-0 {
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile-wrapper">
+        <div class="c-container">
+            <div class="mobile-header">
+                <h1 class="title"><a href="">Veritas</a></h1>
+                <h4 class="sub-title">Connect. Explore. Celebrate.</h4>
+            </div>
+            <div class="product-slider">
+                <div class="slide-item">
+                    <img src="assets/image/1.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="assets/image/1.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="assets/image/1.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="assets/image/1.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="assets/image/1.jpg" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="assets/image/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <a href="#" class="rs-buy-btn" type="submit">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: #8BC729;">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                    </span>
+                    <span> Add to Cart </span>
+                </a>
+            </div>
+        </div>
+        <div class="c-container-full">
+            <div class="image-wrapper">
+                <img src="assets/image/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="any-where">
+            <div class="c-container">
+                <h2 class="title">Anywhere. Anytime.
+                    Anyone.
+                </h2>
+                <img src="assets/image/3p.png" alt="" class="icon">
+
+            </div>
+            <div class="any-where-img">
+                <img src="assets/image/4.jpg" alt="">
+            </div>
+            <p class="style-text">Authentically, you</p>
+        </div>
+        <div class="feature-list">
+            <div class="c-container">
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" viewBox="0 0 36 32"
+                            fill="#a48a1a">
+                            <path
+                                d="M35.972 0.293359L35.8117 0H35.5298C35.4002 0 35.1314 0 33.5699 0.781227C18.5627 8.29376 13.271 18.8547 12.0788 21.6846C8.55257 16.511 5.01499 15.4029 2.63069 15.4029C2.05405 15.4029 1.48065 15.4667 0.928311 15.5926C0.196175 15.7616 0.0390577 16.1539 0.00666232 16.3723C-0.0484098 16.7788 0.239909 17.1806 0.798729 17.4819C5.63212 20.0711 9.30414 26.9922 11.06 30.8887C11.473 31.8071 11.9573 32 12.2878 32H12.2894C12.6328 32 13.1236 31.7959 13.4977 30.8314C15.7184 25.122 22.1926 10.8941 34.3247 2.04873C35.9575 0.856161 36.0773 0.607444 35.972 0.293359Z"
+                                fill="#a48a1a"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_2428_178" x1="6.80958" y1="56.9299" x2="56.8809"
+                                    y2="32.4582" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.1" stop-color="#a48a1a"></stop>
+                                    <stop offset="0.5" stop-color="#a48a1a"></stop>
+                                    <stop offset="0.9" stop-color="#a48a1a"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span> Awerness Of Personal Truth</span>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" viewBox="0 0 36 32"
+                            fill="#a48a1a">
+                            <path
+                                d="M35.972 0.293359L35.8117 0H35.5298C35.4002 0 35.1314 0 33.5699 0.781227C18.5627 8.29376 13.271 18.8547 12.0788 21.6846C8.55257 16.511 5.01499 15.4029 2.63069 15.4029C2.05405 15.4029 1.48065 15.4667 0.928311 15.5926C0.196175 15.7616 0.0390577 16.1539 0.00666232 16.3723C-0.0484098 16.7788 0.239909 17.1806 0.798729 17.4819C5.63212 20.0711 9.30414 26.9922 11.06 30.8887C11.473 31.8071 11.9573 32 12.2878 32H12.2894C12.6328 32 13.1236 31.7959 13.4977 30.8314C15.7184 25.122 22.1926 10.8941 34.3247 2.04873C35.9575 0.856161 36.0773 0.607444 35.972 0.293359Z"
+                                fill="#a48a1a"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_2428_178" x1="6.80958" y1="56.9299" x2="56.8809"
+                                    y2="32.4582" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.1" stop-color="#a48a1a"></stop>
+                                    <stop offset="0.5" stop-color="#a48a1a"></stop>
+                                    <stop offset="0.9" stop-color="#a48a1a"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span> Awerness Of Personal Truth</span>
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" viewBox="0 0 36 32"
+                            fill="#a48a1a">
+                            <path
+                                d="M35.972 0.293359L35.8117 0H35.5298C35.4002 0 35.1314 0 33.5699 0.781227C18.5627 8.29376 13.271 18.8547 12.0788 21.6846C8.55257 16.511 5.01499 15.4029 2.63069 15.4029C2.05405 15.4029 1.48065 15.4667 0.928311 15.5926C0.196175 15.7616 0.0390577 16.1539 0.00666232 16.3723C-0.0484098 16.7788 0.239909 17.1806 0.798729 17.4819C5.63212 20.0711 9.30414 26.9922 11.06 30.8887C11.473 31.8071 11.9573 32 12.2878 32H12.2894C12.6328 32 13.1236 31.7959 13.4977 30.8314C15.7184 25.122 22.1926 10.8941 34.3247 2.04873C35.9575 0.856161 36.0773 0.607444 35.972 0.293359Z"
+                                fill="#a48a1a"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_2428_178" x1="6.80958" y1="56.9299" x2="56.8809"
+                                    y2="32.4582" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.1" stop-color="#a48a1a"></stop>
+                                    <stop offset="0.5" stop-color="#a48a1a"></stop>
+                                    <stop offset="0.9" stop-color="#a48a1a"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span> Awerness Of Personal Truth</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="btn-wrapper pb-0">
+            <a href="#" class="rs-buy-btn" type="submit">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: #8BC729;">
+                        <path
+                            d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                        </path>
+                        <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                        <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                    </svg>
+                </span>
+                <span> Add to Cart </span>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.product-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
